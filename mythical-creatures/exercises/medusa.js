@@ -10,7 +10,9 @@ class Medusa {
     var newStatue = new Statue(victim.name)
     this.statues.push(newStatue)
     if (this.statues.length > 3) {
-      this.statues.shift()
+      var freePerson = new Person(this.statues[0].name)
+      this.statues.shift(freePerson)
+      return freePerson
     }
   }
 }
