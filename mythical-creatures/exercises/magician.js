@@ -9,6 +9,7 @@ class Magician {
     return `${magic.toUpperCase()}!`
   }
   performTrick() {
+    this.confidencePercentage += 10
     if (this.favoriteAccessory !== 'top hat') {
       return 'PULL DOVE FROM SLEEVE'
     }
