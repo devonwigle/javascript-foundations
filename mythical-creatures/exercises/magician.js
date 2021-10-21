@@ -8,6 +8,9 @@ class Magician {
     return `${magic.toUpperCase()}!`
   }
   performTrick() {
+    if (this.favoriteAccessory !== 'top hat') {
+      return 'PULL DOVE FROM SLEEVE'
+    }
     return 'PULL RABBIT FROM TOP HAT'
   }
 }
