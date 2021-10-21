@@ -7,10 +7,11 @@ class Medusa {
     this.statues = [];
   }
   gazeAtVictim(victim) {
-    //this.statues needs to hold Statues no person
-    //change one class to another class
     var newStatue = new Statue(victim.name)
     this.statues.push(newStatue)
+    if (this.statues.length > 3) {
+      this.statues.pop()
+    }
   }
 }
 

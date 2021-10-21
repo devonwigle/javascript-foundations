@@ -43,7 +43,7 @@ describe('Medusa', function() {
 
     medusa.gazeAtVictim(victim1);
     medusa.gazeAtVictim(victim2);
-    
+
     assert.equal(medusa.statues.length, 2);
     assert.instanceOf(medusa.statues[0], Statue);
     assert.instanceOf(medusa.statues[1], Statue);
@@ -51,7 +51,7 @@ describe('Medusa', function() {
     assert.equal(medusa.statues[1].name, 'Bob');
   });
 
-  it.skip('should only be able to have three victims as statues', function() {
+  it('should only be able to have three victims as statues', function() {
     var medusa = new Medusa('Hannah');
     var victim1 = new Person('Pam');
     var victim2 = new Person('Khalid');
