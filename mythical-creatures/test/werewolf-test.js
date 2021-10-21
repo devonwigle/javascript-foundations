@@ -51,7 +51,7 @@ describe('Werewolf', function() {
     assert.equal(werewolf.form, 'human');
   });
 
-  it.skip('should show what form its in', function() {
+  it('should show what form its in', function() {
     var werewolf = new Werewolf('Lousia');
 
     assert.equal(werewolf.form, 'human');
