@@ -36,14 +36,14 @@ describe('Medusa', function() {
 
   // STOP! Skip down to the bottom of the file and pass the tests for Person and Statue!
 
-  it.skip('should gain a statue when staring at a person', function() {
+  it('should gain a statue when staring at a person', function() {
     var medusa = new Medusa('Eric');
     var victim1 = new Person('Robbie');
     var victim2 = new Person('Bob');
 
     medusa.gazeAtVictim(victim1);
     medusa.gazeAtVictim(victim2);
-    console.log(medusa.statues)
+    
     assert.equal(medusa.statues.length, 2);
     assert.instanceOf(medusa.statues[0], Statue);
     assert.instanceOf(medusa.statues[1], Statue);
