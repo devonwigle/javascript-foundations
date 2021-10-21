@@ -7,5 +7,8 @@ class Magician {
   performIncantation(magic) {
     return `${magic.toUpperCase()}!`
   }
+  performTrick() {
+    return 'PULL RABBIT FROM TOP HAT'
+  }
 }
 module.exports = Magician
