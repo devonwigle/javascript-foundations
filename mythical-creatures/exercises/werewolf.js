@@ -1,3 +1,5 @@
+var Victim = require('./victim');
+
 class Werewolf {
   constructor(name) {
     this.name = name;
@@ -13,6 +15,13 @@ class Werewolf {
     this.form = 'human'
     this.hungry = false
     return 'Where are I?'
+  }
+  eatVictim(victim) {
+
+    if (this.hungry) {
+      victim.alive = false
+      return `Yum, ${victim.name} was delicious.`
+    }
   }
 }
 
