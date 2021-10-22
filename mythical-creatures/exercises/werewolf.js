@@ -20,6 +20,7 @@ class Werewolf {
 
     if (this.hungry) {
       victim.alive = false
+      this.form = 'human'
       return `Yum, ${victim.name} was delicious.`
     }
   }
