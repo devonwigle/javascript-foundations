@@ -11,6 +11,7 @@ class Werewolf {
       return 'Aaa-Woooo!'
     }
     this.form = 'human'
+    this.hungry = false
     return 'Where are I?'
   }
 }
