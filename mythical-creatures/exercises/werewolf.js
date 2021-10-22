@@ -18,10 +18,12 @@ class Werewolf {
   }
   eatVictim(victim) {
 
-    if (this.hungry) {
+    if (this.hungry && this.form === 'wolf') {
       victim.alive = false
       this.form = 'human'
       return `Yum, ${victim.name} was delicious.`
+    } else if (this.form === 'human') {
+      return 'No way am I eating Baby, I\'d like a burger!'
     }
   }
 }
