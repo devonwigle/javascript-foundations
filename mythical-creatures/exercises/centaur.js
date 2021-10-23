@@ -22,6 +22,11 @@ class Centaur {
     }
     return 'Clop clop clop clop!!!'
   }
+  sleep() {
+    if (this.standing = true) {
+      return 'NO!'
+    }
+  }
 
 }
 
