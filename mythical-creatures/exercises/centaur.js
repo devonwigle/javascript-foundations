@@ -2,6 +2,7 @@ class Centaur {
   constructor(name) {
     this.name = name.name
     this.breed = name.type
+    this.cranky = false
   }
   shootBow() {
     return 'Twang!!!'
@@ -9,6 +10,7 @@ class Centaur {
   run() {
     return 'Clop clop clop clop!!!'
   }
+
 }
 
 module.exports = Centaur
