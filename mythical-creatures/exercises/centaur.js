@@ -4,6 +4,7 @@ class Centaur {
     this.breed = name.type;
     this.cranky = false;
     this.standing = true;
+    this.layingDown = false;
     this.activeCount = 0;
   }
   shootBow() {
@@ -27,7 +28,14 @@ class Centaur {
       return 'NO!'
     }
   }
-
+  layDown() {
+    this.standing = false
+    this.layingDown = true
+  }
+  standUp() {
+    this.standing = true
+    this.layingDown = false
+  }
 }
 
 module.exports = Centaur
