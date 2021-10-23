@@ -10,6 +10,7 @@ class Centaur {
     this.activeCount ++
     if (this.activeCount >= 3) {
       this.cranky = true
+      return 'NO!'
     }
     return 'Twang!!!'
   }

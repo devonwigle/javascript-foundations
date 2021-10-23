@@ -78,7 +78,7 @@ describe('Centaur', function() {
     assert.equal(centaur.cranky, true)
   });
 
-  it.skip('should not shoot when cranky', function() {
+  it('should not shoot when cranky', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.shootBow();
