@@ -8,13 +8,11 @@ describe('Centaur', function() {
   });
 
   it('should have a name', function() {
-    // it('should instantiate our good friend, Centaur', function() {
     var centaur = new Centaur({name: 'Devon'});
     var centaur2 = new Centaur({name: 'Andreau'});
 
     assert.deepEqual(centaur.name, 'Devon');
     assert.deepEqual(centaur2.name, 'Andreau');
-    //});
     // instantiate a Centaur object with an object as an argument. The object should have a key of name and value of your name
     // instantiate another Centaur object with a different name
 
@@ -24,7 +22,7 @@ describe('Centaur', function() {
     //NOTE: We will not ask you to write your own tests in a mod 1 assessment, but it is good practice to prepare for mod 2!
   });
 
-  it.skip('should have a breed', function() {
+  it('should have a breed', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     assert.equal(centaur.breed, 'Palomino');
