@@ -27,9 +27,10 @@ class Centaur {
   };
 
   sleep() {
-    if (this.standing = true) {
-      return 'NO!'
-    }
+    if (this.layingDown) {
+      return 'ZZZZ'
+    };
+    return 'NO!'
   };
 
   layDown() {
