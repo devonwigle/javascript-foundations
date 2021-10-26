@@ -10,7 +10,7 @@ class Centaur {
 
   shootBow() {
     this.activeCount ++
-    if ((this.activeCount >= 3) || (this.layingDown === true)){
+    if ((this.activeCount >= 3) || (this.layingDown)){
       this.cranky = true
       return 'NO!'
     }
@@ -19,7 +19,7 @@ class Centaur {
 
   run() {
     this.activeCount ++
-    if ((this.activeCount >= 3) || (this.layingDown === true)) {
+    if ((this.activeCount >= 3) || (this.layingDown)) {
       this.cranky = true
       return 'NO!'
     }
