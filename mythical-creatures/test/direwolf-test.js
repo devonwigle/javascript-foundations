@@ -8,7 +8,7 @@ describe('Direwolf', function() {
     assert.isFunction(Direwolf);
   });
 
-  it.skip('should instantiate our good friend, Direwolf', function() {
+  it('should instantiate our good friend, Direwolf', function() {
     const direwolf = new Direwolf();
     assert.isObject(direwolf);
   });
