@@ -28,6 +28,8 @@ class Centaur {
 
   sleep() {
     if (this.layingDown) {
+      this.cranky = false
+      this.activeCount = 0
       return 'ZZZZ'
     };
     return 'NO!'

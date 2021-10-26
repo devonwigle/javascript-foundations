@@ -30,7 +30,7 @@ describe('Centaur', function() {
 
   it('should have excellent bow skills', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
-    
+
     assert.equal(centaur.shootBow(), 'Twang!!!');
   });
 
@@ -138,7 +138,7 @@ describe('Centaur', function() {
     assert.equal(centaur.sleep(), 'ZZZZ');
   });
 
-  it.skip('should not be cranky after sleeping', function() {
+  it('should not be cranky after sleeping', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.run();
