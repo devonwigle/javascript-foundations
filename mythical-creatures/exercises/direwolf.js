@@ -15,6 +15,10 @@ class Direwolf {
       this.huntsWhiteWalkers = false
     }
   }
+  leave(stark) {
+    this.starksToProtect.pop(stark)
+    stark.safe = false
+  }
 }
 
 module.exports = Direwolf
