@@ -5,6 +5,9 @@ class Stark {
     this.safe = false
   }
   sayHouseWords() {
+    if (this.safe) {
+      return 'The North Remembers'
+    }
     return 'Winter is Coming'
   }
 }
