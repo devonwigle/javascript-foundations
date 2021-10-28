@@ -1,6 +1,6 @@
 class Stark {
-  constructor() {
-
+  constructor(stark = {}) {
+    this.name = stark.name
   }
 }
 
