@@ -8,7 +8,9 @@ class Direwolf {
     this.starksToProtect = []
   }
   protect(stark) {
-    this.starksToProtect.push(stark)
+    if (this.home === stark.location) {
+     this.starksToProtect.push(stark)
+    }
   }
 }
 
