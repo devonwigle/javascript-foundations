@@ -1,4 +1,3 @@
-var stark = require('./stark.js')
 
 class Direwolf {
   constructor(name, home, size) {

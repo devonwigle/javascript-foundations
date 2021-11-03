@@ -1,3 +1,5 @@
+var Direwolf = require('../exercises/direwolf');
+
 class Stark {
   constructor(stark = {}) {
     this.name = stark.name
@@ -9,6 +11,12 @@ class Stark {
       return 'The North Remembers'
     }
     return 'Winter is Coming'
+  }
+  callDirewolf(name, home) {
+    var wolf = new Direwolf(name, home)
+    wolf.home = this.location;
+    wolf.protect(this);
+    return wolf;
   }
 }
 
