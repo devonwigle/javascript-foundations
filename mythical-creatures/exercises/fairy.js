@@ -10,6 +10,10 @@ class Fairy {
   believe() {
     this.dust += 10
   }
+  makeDresses(flower) {
+    for (var i = 0; i < flower.length; i++)
+      this.clothes.dresses.push(flower[i])
+  }
 }
 
 module.exports = Fairy
