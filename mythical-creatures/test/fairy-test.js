@@ -75,7 +75,7 @@ describe('Fairy', () => {
     assert.deepEqual(fairy.clothes.dresses, ['Iris', 'Ranunculus', 'Daisy', 'Hydrangea', 'Forget-me-not'])
   });
 
-  it.skip('should start out good natured', () => {
+  it('should start out good natured', () => {
     const fairy = new Fairy('Cologne');
 
     assert.equal(fairy.disposition, 'Good natured');
