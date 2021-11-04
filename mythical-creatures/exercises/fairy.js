@@ -6,6 +6,9 @@ class Fairy {
   receiveBelief() {
     this.dust ++
   }
+  believe() {
+    this.dust += 10
+  }
 }
 
 module.exports = Fairy
