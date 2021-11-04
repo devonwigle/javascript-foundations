@@ -1,7 +1,7 @@
 class Ogre {
   constructor(beast) {
     this.name = beast.name;
-    this.home = 'Swamp';
+    this.home = beast.abode || 'Swamp';
   }
 }
 
