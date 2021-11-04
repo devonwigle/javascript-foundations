@@ -20,7 +20,8 @@ class Fairy {
     this.disposition = 'Vengeful'
   }
   replaceInfant(infant) {
-    if (this.disposition === 'Good natured') {
+    if ((this.humanWards.length >= 2) || this.disposition === 'Good natured') {
+      this.disposition = 'Good natured'
       return infant
     }
     infant.disposition = 'Malicious'
