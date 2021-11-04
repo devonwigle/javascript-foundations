@@ -18,6 +18,9 @@ class Fairy {
   becomeProvoked() {
     this.disposition = 'Vengeful'
   }
+  replaceInfant(infant) {
+    infant.disposition = 'Malicious'
+  }
 }
 
 module.exports = Fairy
