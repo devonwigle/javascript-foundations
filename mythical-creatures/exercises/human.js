@@ -5,7 +5,9 @@ class Human {
     this.noticeOgre = false;
   }
   noticesOgre() {
-    if ((this.encounterCounter % 3) != 0) {
+    if (this.encounterCounter === 0) {
+      return this.noticeOgre = false;
+    } else if ((this.encounterCounter % 3) != 0) {
       return this.noticeOgre = false
     }
     return this.noticeOgre = true
