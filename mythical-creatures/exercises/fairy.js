@@ -19,6 +19,9 @@ class Fairy {
     this.disposition = 'Vengeful'
   }
   replaceInfant(infant) {
+    if (this.disposition === 'Good natured') {
+      return infant
+    }
     infant.disposition = 'Malicious'
   }
 }
