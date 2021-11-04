@@ -4,6 +4,7 @@ class Fairy {
     this.dust = 10;
     this.clothes = {dresses: ['Iris']};
     this.disposition = 'Good natured';
+    this.humanWards = [];
   }
   receiveBelief() {
     this.dust ++
@@ -23,6 +24,7 @@ class Fairy {
       return infant
     }
     infant.disposition = 'Malicious'
+    this.humanWards.push(infant)
   }
 }
 
