@@ -19,6 +19,7 @@ class Sphinx {
         return 'That wasn\'t that hard, I bet you don\'t get the next one'
       }
     }
+    this.heroesEaten ++
   }
 }
 
