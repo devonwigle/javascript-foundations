@@ -119,7 +119,7 @@ describe('Sphinx', () => {
     assert.equal(sphinx.heroesEaten, 0);
   });
 
-  it('should eat the hero if their answer isn\'t correct for any riddles', () => {
+  it.only('should eat the hero if their answer isn\'t correct for any riddles', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
