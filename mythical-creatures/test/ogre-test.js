@@ -91,11 +91,11 @@ describe('Ogre', () => {
     ogre.encounter(human);
 
     assert.equal(human.noticesOgre(), true);
-    
+
     assert.equal(ogre.swings, 1);
   });
 
-  it.skip('ogre hits human every second time it swings', () => {
+  it('ogre hits human every second time it swings', () => {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 

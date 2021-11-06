@@ -12,6 +12,9 @@ class Ogre {
   }
   swingAt(human) {
     this.swings ++
+    if (this.swings % 2) {
+      human.knockedOut = true
+    }
   }
 }
 

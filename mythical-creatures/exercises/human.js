@@ -3,6 +3,7 @@ class Human {
     this.name = person;
     this.encounterCounter = 0;
     this.noticeOgre = false;
+    this.knockedOut = false;
   }
   noticesOgre() {
     if (this.encounterCounter === 0) {
