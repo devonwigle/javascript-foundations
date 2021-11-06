@@ -6,8 +6,11 @@ class Ogre {
   }
   encounter(human) {
     human.encounterCounter ++
+    if (human.noticesOgre()) {
+      this.swingAt(human)
+    }
   }
-  swingAt() {
+  swingAt(human) {
     this.swings ++
   }
 }
