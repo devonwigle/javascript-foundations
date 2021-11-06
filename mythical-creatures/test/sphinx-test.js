@@ -6,8 +6,8 @@ describe('Sphinx', () => {
     assert.isFunction(Sphinx);
   });
 
-  it.only('should have no name', () => {
-    
+  it('should have no name', () => {
+
     var sphinx = new Sphinx
 
     assert.isObject(sphinx)
