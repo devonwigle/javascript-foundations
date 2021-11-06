@@ -11,6 +11,13 @@ class Sphinx {
       this.riddles.push(riddle)
     }
   }
+  attemptAnswer(answer) {
+    for (var i = 0; i < this.riddles.length; i++) {
+      if (answer === this.riddles[i].answer) {
+        this.riddles.splice(i, 1)
+      }
+    }
+  }
 }
 
 module.exports = Sphinx;
