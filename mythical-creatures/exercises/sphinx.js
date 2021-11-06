@@ -15,6 +15,7 @@ class Sphinx {
     for (var i = 0; i < this.riddles.length; i++) {
       if (answer === this.riddles[i].answer) {
         this.riddles.splice(i, 1)
+        return 'That wasn\'t that hard, I bet you don\'t get the next one'
       }
     }
   }
