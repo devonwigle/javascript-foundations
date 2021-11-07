@@ -15,7 +15,7 @@ class Sphinx {
   attemptAnswer(answer) {
     if (answer === this.riddles[0].answer && this.riddles.length === 1) {
       this.riddles.splice(0, 1)
-      return 'PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"Halfway, after that it\'s running out.\"???'
+      return `PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"${answer}\"???`
     }
     for (var i = 0; i < this.riddles.length; i++) {
       if (answer === this.riddles[i].answer ) {
