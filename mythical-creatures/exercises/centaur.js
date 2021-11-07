@@ -52,7 +52,8 @@ class Centaur {
     if (this.layingDown) {
       return 'Not while I\'m laying down!'
     }
-    this.cranky = false
+    this.activeCount = 0;
+    this.cranky = false;
   }
 }
 
